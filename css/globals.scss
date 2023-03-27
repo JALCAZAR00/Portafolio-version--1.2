@@ -1,0 +1,149 @@
+$light-theme: false;
+/*--------------------- Estilos Generales ---------------------*/
+:root{
+    --primary-color: #141A1A;
+    --secondary-color: #0872BF; 
+    --white: #FFFFFF;
+    --box-shadow: rgba(100, 100, 111, 0.2) 12px 12px 12px 0px;
+}
+@mixin sub-titles{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #0872BF;
+    margin: 24px auto 24px auto;
+}
+@mixin adicionals-section{    
+    min-width: 139px;
+    height: auto;
+    font-size: 1.6rem;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid var(--secondary-color);
+    color: var(--white);
+    box-shadow: -1px 1px 6px var(--secondary-color);
+    img{
+        width: 60px;
+        height: 60px;
+        margin-bottom: 12px;
+    }
+}
+@mixin certificates-section{
+    min-width: 100%;
+    height: auto;
+    padding: 5px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
+}
+@mixin arrows{
+    position: absolute;
+    bottom: 32.5%;
+    background-color: transparent;
+    border-radius: 1em;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+@if($light-theme == true){
+    body{
+        background-color: var(--white) !important;
+    }
+    nav ul li{
+        color: #141A1A !important;
+        font-weight: 600 !important;
+    }
+    .first-section-title{
+        color: #141A1A !important;
+        font-weight: bold !important;
+    }
+    .third-section-adicionals figure{
+        color: #141A1A !important;
+        font-weight: bold !important;
+    }
+}  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    background-color: var(--primary-color);
+}
+body{
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+    //background-color: var(--primary-color);
+    font-family: 'Open Sans', sans-serif;
+    max-width: 1004px;
+    margin: 0 auto;
+}
+
+/*--------- Generals Class ----------*/
+.inactive{
+    display: none;
+}
+.light-theme{
+        background-color: var(--white);
+        body{
+            background-color: var(--white);
+        }
+        nav ul li{
+            color: #141A1A !important;
+            font-weight: 600 !important;
+        }
+        .first-section-main{
+            .first-section-title{
+                color: #141A1A !important;
+                font-weight: bold !important;  
+            }
+            .first-section-img{
+                .front-img{
+                    box-shadow: 1px 1px 2px var(--white);
+                }
+            }
+        }
+        .second-section-container{
+            .second-section-cards-container h2{
+                color: black;
+            }
+        }
+        .third-section-adicionals figure{
+            color: #141A1A !important;
+            font-weight: bold !important;
+        }
+        .four-section-container{
+            .arrow-left, .arrow-right{
+                background-color: white !important;
+            }
+        }
+        footer{
+            border-top: 1px solid var(--primary-color);
+        }
+}
+.fondo{
+    position: absolute;
+    left: 0; 
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    opacity: .9;
+    border-radius: inherit      
+}

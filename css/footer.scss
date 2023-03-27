@@ -1,0 +1,26 @@
+footer{
+    width: 100%;
+    height: auto;
+    border-top: 1px solid white;
+    section{
+        text-align: center;
+        padding: 15px;
+        h2{
+            @include sub-titles;
+            margin: 0;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            cursor: pointer;
+            li{
+                margin: 0 4px;
+            }
+        }
+        img{
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
