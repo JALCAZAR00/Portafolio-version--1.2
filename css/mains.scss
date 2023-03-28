@@ -152,6 +152,10 @@ main{
             }
             .adicional-four{
                 @include adicionals-section;
+                img{
+                    width: 65px;
+                    height: 50px;  
+                }
             }
             .adicional-five{
                 @include adicionals-section;
@@ -164,8 +168,8 @@ main{
                 position: relative;
                 @include adicionals-section;
                 img{
-                    width: 55px;
-                    height: 55px;  
+                    width: 75px;
+                    height: 70px;  
                 }
             }
         }

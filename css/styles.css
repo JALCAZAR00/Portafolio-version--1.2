@@ -397,6 +397,10 @@ main .third-section-container .third-section-adicionals .adicional-four img {
   height: 60px;
   margin-bottom: 12px;
 }
+main .third-section-container .third-section-adicionals .adicional-four img {
+  width: 65px;
+  height: 50px;
+}
 main .third-section-container .third-section-adicionals .adicional-five {
   min-width: 139px;
   height: auto;
@@ -437,8 +441,8 @@ main .third-section-container .third-section-adicionals .adicional-six img {
   margin-bottom: 12px;
 }
 main .third-section-container .third-section-adicionals .adicional-six img {
-  width: 55px;
-  height: 55px;
+  width: 75px;
+  height: 70px;
 }
 main .four-section-container {
   width: 100%;
